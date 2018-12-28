@@ -22,6 +22,10 @@ const client = new Discord.Client({disableEveryone: true});
 
 const prefix = "1";
 /////////////////////////
+client.on('ready', () => {
+     client.user.setActivity(" 1play  By:#Mal Team",{type: 'WATCHING'})
+
+});
 ////////////////////////
 
 client.on('message', async msg => {
